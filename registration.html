@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENSHOP</title>
+    <!-- Kira Levchenko -->
+    <style>
+        .wrapper {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .text {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        a {
+            color: #46A358;
+            text-decoration: none;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 16px;
+            width: 300px;
+            max-height: 40px;
+            padding: 12px 14px;
+            border-radius: 5px;
+            border: 1px solid #EAEAEA;
+        }
+
+        input::placeholder {
+            color: #A5A5A5;
+        }
+
+        .line {
+            padding: 5px 0px;
+        }
+
+        .form {
+            width: 300px;
+            color: white;
+            background-color: #46A358;
+            height: 45px;
+            border-radius: 5px;
+            margin: 20px 0px;
+            border: 0px;
+        }
+
+        .social {
+            height: 40px;
+            width: 300px;
+            margin: 10px 0px;
+            text-align: center;
+            border: 1px solid #EAEAEA;
+            background-color: white;
+            color: #727272;
+        }
+
+        .logo {
+            margin: 0px 5px;
+        }
+
+        hr {
+            height: 10px;
+            background-color: #46A358;
+        }
+
+        p {
+            color: #3D3D3D;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p style="text-align: right;">X</p>
+        <div class="text">
+            <p style="text-align: center; padding: 20px 0px; font-size: 20px;">Login | <a href="#">Register</a></p>
+            <p>Enter your email and password to register.</p>
+            <form>
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="email" placeholder="Enter your email address" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+                <button type="submit" class="form">Register</button>
+            </form>
+            <p>
+                <img class="line" src="./img/line.png" alt="line">
+                Or register with
+                <img class="line" src="./img/line.png" alt="line">
+            </p>
+            <button class="social"><img class="logo" src="./img/google.png" alt="Google logo">Continue with
+                Google</button>
+            <button class="social"><img class="logo" src="./img/facebook.png" alt="Facebook logo">Continue with
+                Facebook</button>
+        </div>
+        <hr>
+    </div>
+</body>
+
+</html>
