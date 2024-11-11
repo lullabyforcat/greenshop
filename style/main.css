@@ -69,6 +69,10 @@ nav .right {
 
 /* main */
 
+.hero {
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+
+}
 .uppercase {
     text-transform: uppercase;
 }
