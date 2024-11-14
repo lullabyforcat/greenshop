@@ -1,6 +1,7 @@
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    font-family: "PT Sans", sans-serif;
 }
 
 a {
@@ -10,7 +11,7 @@ a {
 
 /* nav */
 
-nav {
+header nav {
     border-bottom: 0.3px solid #46A35880;
     margin-top: 30px;
     text-align: center;
@@ -23,32 +24,31 @@ nav {
 .logo {
     margin-top: 1px;
 }
-nav ul li {
+header nav ul li {
     margin-right: 0px;
     display: inline-block;
     vertical-align: top;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #3D3D3D;
-    font-family: "PT Sans", sans-serif;
 }
 
-nav ul li:not(:last-child) {
+header nav ul li:not(:last-child) {
     margin-right: 50px;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
 }
 
-nav ul li {
+header nav ul li {
     margin-top: 8px;
     margin-bottom: 25px;
 }
 
-nav .button {
+header nav .button {
     margin-bottom: 18px;
     padding-top: 8px;
     padding-bottom: 7px;
@@ -56,15 +56,23 @@ nav .button {
     border-radius: 6px;
     color: white;
     background: #46A358;
-    font-family: "PT Sans", sans-serif;
 }
 
-nav .left {
+header nav .left {
     float: left
 }
 
-nav .right {
+header nav .right {
     float: right
+}
+
+.login-img {
+    vertical-align: bottom;
+}
+
+.login-text {
+    margin-left: 4px;
+    vertical-align: text-top;
 }
 
 /* main */
@@ -83,7 +91,6 @@ nav .right {
 }
 
 .hero h1 {
-    font-family: "PT Sans", sans-serif;
     width: 530px;
     margin-top: 7px;
     font-size: 70px;
@@ -98,7 +105,6 @@ nav .right {
 }
 
 .hero h2 {
-    font-family: "PT Sans", sans-serif;
     width: 205px;
     margin-top: 68px;
     font-size: 14px;
@@ -110,7 +116,6 @@ nav .right {
 }
 
 .hero p {
-    font-family: "PT Sans", sans-serif;
     width: 557px;
     margin-top: 5px;
     font-size: 14px;
@@ -124,7 +129,6 @@ nav .right {
     display: block;
     margin-top: 44px;
     width: 140px;
-    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -148,4 +152,184 @@ nav .right {
 
 .clear {
     clear: both;
+}
+
+/* content */
+
+.content {
+    margin-top: 171px;
+}
+
+.content-block {
+    display: inline-block;
+}
+
+nav.content-block {
+    width: 305px;
+    /* ширина блока повинна бути 310, але в мене при такій ширині бллок з контентом зʼїждажє. Не можу зрозуміти де беруться додаткові відступи. В інстпекторі їх теж не бачу. Підкажіть куди дивитись. */
+    margin-right: 50px;
+}
+
+.arrow-down {
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
+}
+
+.banner {
+    width: 306px;
+    height: 467px;
+}
+
+.categories {
+    height: 774px;
+    background: #FBFBFB;
+    padding-left: 18px;
+    padding-top: 14px;
+}
+section nav h3 {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+.ul-nav{
+margin-left: 12px;
+}
+
+.ul-nav a {
+    color: #3D3D3D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+
+.bottom {
+    margin-bottom: 31px;
+}
+.products {
+    width: 840px;
+}
+
+.products ul li {
+    display: inline-block;
+    margin-right: 37px;
+    box-sizing: content-box;
+}
+
+.products ul li:last-child {
+    margin-right: 0px;
+}
+
+.bottom-inline li :hover{
+    color: #46A358;
+    border-bottom: 2px solid #46A358;
+}
+
+.bottom-inline {
+    display: inline-block;
+}
+
+.products li a {
+    color: #3D3D3D;
+    margin-right: 37px;
+}
+
+.content-right {
+    float: right
+}
+
+.product-block {
+    display: inline-block;
+    width: 255px;
+    margin-right: 33px;
+    /* поставила ширину блоків 255, в макеті ширина 258 + відступи між ними 33 - в результаті загальна ширина 840
+    я поставила ширину блоків 258, відступи 33, загальна ширина блоку - 840 і в мене третій блок зʼїхав на новий рядок. Не можу зрозуміти звідки взялись додаткові відступи
+     */
+}
+
+.line-1, .line-2 {
+    margin-bottom: 70px;
+}
+
+.line-3 {
+    margin-bottom: 90px;
+}
+.product-block:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #3D3D3D;
+    margin-top: 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: #46A358;
+    margin-top: 6px;
+}
+
+.image-product {
+    width: 250px;
+    height: 250px;
+
+}
+
+.product-img {
+    width: 258px;
+    height: 300px;
+    background: #FBFBFB;
+    padding-top: 31px;
+    padding-left: 4px;
+}
+
+.pages {
+    float:right;
+    margin-bottom: 82px;
+}
+
+.nr{
+    display: inline-block;
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: left;
+    padding-top: 9px;
+    padding-left: 13px;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.nr:hover {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    background: #46A358;
+    border: 0px;
+}
+.nr:last-child {
+    padding-left: 0px;
+}
+.arrow-right {
+    width: 18px;
+    height: 18px;
+    margin-left: 9px;
 }
