@@ -1,7 +1,7 @@
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Cera Pro-Regular", sans-serif;
 }
 
 a {
@@ -91,10 +91,11 @@ header nav .right {
 }
 
 .hero h1 {
+    font-family: "Cera Pro-Black", sans-serif;
     width: 530px;
     margin-top: 7px;
     font-size: 70px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 70px;
     text-align: left;
     color:#3D3D3D;
@@ -105,10 +106,11 @@ header nav .right {
 }
 
 .hero h2 {
-    width: 205px;
+    font-family: "Cera Pro-Medium", sans-serif;
+    width: 206px;
     margin-top: 68px;
     font-size: 14px;
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 16px;
     letter-spacing: 0.1em;
     text-align: left;
@@ -116,21 +118,23 @@ header nav .right {
 }
 
 .hero p {
+    font-family: "Cera Pro-Regular", sans-serif;
     width: 557px;
     margin-top: 5px;
     font-size: 14px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 24px;
     text-align: left;
     color: #727272;
 }
 
 .hero .button {
+    font-family: "Cera Pro-Bold", sans-serif;
     display: block;
     margin-top: 44px;
     width: 140px;
     font-size: 16px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 20px;
     background: #46A358;
     border-radius: 6px;
@@ -188,9 +192,10 @@ nav.content-block {
     padding-top: 14px;
 }
 section nav h3 {
+    font-family: "Cera Pro-Bold", sans-serif;
     color: #3D3D3D;
     font-size: 18px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 16px;
     text-align: left;
     margin-bottom: 7px;
@@ -201,9 +206,10 @@ margin-left: 12px;
 }
 
 .ul-nav a {
+    font-family: "Cera Pro-Regular", sans-serif;
     color: #3D3D3D;
     font-size: 15px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 40px;
     text-align: left;
 }
@@ -264,8 +270,9 @@ margin-left: 12px;
 }
 
 .title{
+    font-family: "Cera Pro-Regular", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 16px;
     text-align: left;
     color: #3D3D3D;
@@ -273,8 +280,9 @@ margin-left: 12px;
 }
 
 .price {
+    font-family: "Cera Pro-Bold", sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 16px;
     text-align: left;
     color: #46A358;
@@ -301,10 +309,11 @@ margin-left: 12px;
 }
 
 .nr{
+    font-family: "Cera Pro-Thin", sans-serif;
     display: inline-block;
     color: #3D3D3D;
     font-size: 18px;
-    font-weight: 300;
+    /* font-weight: 300; */
     line-height: 16px;
     text-align: left;
     padding-top: 9px;
@@ -317,9 +326,10 @@ margin-left: 12px;
 }
 
 .nr:hover {
+    font-family: "Cera Pro-Bold", sans-serif;
     color: #FFF;
     font-size: 18px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 16px;
     text-align: left;
     background: #46A358;
