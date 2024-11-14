@@ -174,12 +174,6 @@ nav.content-block {
     margin-right: 50px;
 }
 
-.arrow-down {
-    width: 16px;
-    height: 16px;
-    padding-top: 2px;
-}
-
 .banner {
     width: 306px;
     height: 467px;
@@ -214,9 +208,20 @@ margin-left: 12px;
     text-align: left;
 }
 
+.ul-nav a:hover {
+    color: #46A358;
+}
+
 .bottom {
     margin-bottom: 31px;
 }
+
+.arrow-down {
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
+}
+
 .products {
     width: 840px;
 }
