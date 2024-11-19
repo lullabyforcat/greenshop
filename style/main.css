@@ -348,3 +348,145 @@ margin-left: 12px;
     height: 18px;
     margin-left: 9px;
 }
+
+/* block 3 */
+
+.flex-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.flex-1-item {
+    display: flex;
+    flex-wrap: no-wrap;
+    width: 586px;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+.flex-text {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+}
+
+.flex-1-h {
+    font-family: Cera Pro-Black;
+    font-size: 18px;
+    /* font-weight: 900; */
+    line-height: 24px;
+    text-align: right;
+    color: #3D3D3D;
+    margin-top: 37px;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.flex-p {
+    font-family: Cera Pro-Regular;
+    font-size: 14px;
+/* font-weight: 400; */
+    line-height: 24px;
+    text-align: right;
+    color: #727272;
+    margin-top: 9px;
+    width: 292px;
+}
+
+.flex-button {
+    width: 140px;
+    margin-top: 25px;
+    text-align: right;
+    font-family: Cera Pro-Medium;
+    font-size: 14px;
+    /* font-weight: 500; */
+    line-height: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #46A358;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    padding-left: 28px;
+}
+
+.flex-h2 {
+    font-family: Cera Pro-Bold;
+    font-size: 30px;
+    /* font-weight: 700; */
+    line-height: 16px;
+    text-align: center;
+    color: #3D3D3D;
+    margin-top: 138px;  
+}
+
+.flex-p-under-h {
+    font-family: Cera Pro-Regular;
+    font-size: 14px;
+    /* font-weight: 400; */
+    line-height: 24px;
+    text-align: center;
+    color: #727272;
+    margin-top: 15px;
+}
+
+.flex-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 42px;
+    margin-top: 35px;
+    margin-bottom: 68px;
+    padding-left: 15;
+}
+
+.flex-2-text {
+    padding: 9px 11px 12px 15px;
+    background: #FBFBFB;
+    width: 268px;
+}
+
+.green {
+    font-family: Cera Pro-Medium;
+    font-size: 14px;
+    /* font-weight: 500; */
+    line-height: 16px;
+    text-align: left;
+    color: #46A358;
+}
+
+.flex-2-h {
+    font-family: Cera Pro-Bold;
+    font-size: 20px;
+    /* font-weight: 700; */
+    line-height: 26px;
+    text-align: left;
+    color: #3D3D3D; 
+    margin-top: 4px;
+    width: 189px;
+}
+
+.flex-2-p {
+    font-family: Cera Pro-Regular;
+    font-size: 14px;
+    /* font-weight: 400; */
+    line-height: 22px;
+    text-align: left;
+    color: #727272;
+    margin-top: 4px;
+}
+
+.more {
+    font-family: Cera Pro-Medium;
+    font-size: 14px;
+    /* font-weight: 500; */
+    line-height: 16px;
+    text-align: left;
+    color: #3D3D3D;
+    margin-top: 9px;
+}
+
+.more:hover {
+    color: #46A358;
+
+}
