@@ -1,35 +1,35 @@
 @font-face {
-    font-family: "Cera Pro-Regular";
+    font-family: "CeraPro-Regular";
     font-weight: 400;
-    src: local("Cera Pro-Regular"),
+    src: local("CeraPro-Regular"),
       url("../fonts/CeraPro-Regular.woff2") format("woff2"),
       url("../fonts/CeraPro-Regular.ttf") format("truetype");
   }
 
   @font-face {
-    font-family: "Cera Pro-Thin";
+    font-family: "CeraPro-Thin";
     font-weight: 300;
-    src: local("Cera Pro-Thin"),
+    src: local("CeraPro-Thin"),
       url("../fonts/CeraPro-Thin.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "Cera Pro-Medium";
+    font-family: "CeraPro-Medium";
     font-weight: 500;
-    src: local("Cera Pro-Medium"),
+    src: local("CeraPro-Medium"),
       url("../fonts/CeraPro-Medium.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "Cera Pro-Bold";
+    font-family: "CeraPro-Bold";
     font-weight: 700;
-    src: local("Cera Pro-Bold"),
+    src: local("CeraPro-Bold"),
       url("../fonts/CeraPro-Bold.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "Cera Pro-Black";
+    font-family: "CeraPro-Black";
     font-weight: 900;
-    src: local("Cera Pro-Black"),
+    src: local("CeraPro-Black"),
       url("../fonts/CeraPro-Black.woff2") format("woff2");
   }
