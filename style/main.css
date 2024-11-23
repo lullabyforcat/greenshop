@@ -44,8 +44,8 @@ li ul {
     >li {
         position: relative;
         ul {
-            left: 195px;
-            top: -123px;
+            left: 190px;
+            top: -127px;
         }
     }
 
@@ -54,6 +54,7 @@ li ul {
 .nav-top-l1 li {
     padding-top: 7px;
     padding-bottom: 7px;
+    padding-left: 14px;
     background-color: #EDF6EE;
     width: 188px;
 }
@@ -126,6 +127,7 @@ header nav .button {
 .login-text {
     margin-left: 4px;
     vertical-align: text-top;
+    color: #FFFFFF;
 }
 
 /* main */
