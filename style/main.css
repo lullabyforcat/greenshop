@@ -15,11 +15,49 @@ header nav {
     border-bottom: 0.3px solid #46A35880;
     margin-top: 30px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    a{
+        font-family: "CeraPro-Regular", sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+       color: #3D3D3D
+    }
 }
 
-.nav {
+.nav-top {
     display: inline-block;
+    >li {
+        position: relative;
+    }
 }
+
+li ul {
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    padding-top: 25px;
+    text-align: left;
+    >li {
+        position: relative;
+        ul {
+            left: 195px;
+            top: -123px;
+        }
+    }
+
+}
+
+.nav-top-l1 li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #EDF6EE;
+    width: 188px;
+}
+
 
 .logo {
     margin-top: 1px;
@@ -38,15 +76,38 @@ header nav ul li:not(:last-child) {
     margin-right: 50px;
 }
 
-header nav ul li a:hover {
-    border-bottom: 3px solid #46A358;
+.nav-top-li:hover {
+    >a {border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
+    }
+    >ul {
+        opacity: 1;
+        visibility: visible;
+        max-height: 143px;
+     >li:hover {
+        ul {
+        opacity: 1;
+        visibility: visible;
+        max-height: 143px;}
+
+}
+    }
 }
 
-header nav ul li {
+.nav-top-l1 li:hover {
+    border: none;
+    background-color: #1A712A;
+    max-height: 35px;
+    >a {
+        color: #FFF;
+    }
+}
+
+.nav-top-li {
     margin-top: 8px;
     margin-bottom: 25px;
 }
+
 
 header nav .button {
     margin-bottom: 18px;
@@ -56,14 +117,6 @@ header nav .button {
     border-radius: 6px;
     color: white;
     background: #46A358;
-}
-
-header nav .left {
-    float: left
-}
-
-header nav .right {
-    float: right
 }
 
 .login-img {
@@ -170,7 +223,7 @@ header nav .right {
 
 nav.content-block {
     width: 305px;
-    /* ширина блока повинна бути 310, але в мене при такій ширині бллок з контентом зʼїждажє. Не можу зрозуміти де беруться додаткові відступи. В інстпекторі їх теж не бачу. Підкажіть куди дивитись. */
+    /* ширина блока повинна бути 310, але в мене при такій ширині блок з контентом зʼїждажє. Не можу зрозуміти де беруться додаткові відступи. В інстпекторі їх теж не бачу. Підкажіть куди дивитись. */
     margin-right: 50px;
 }
 
@@ -380,13 +433,15 @@ margin-left: 12px;
     background: #46A358;
     border: 0px;
 }
-.nr:last-child {
+/* .nr:last-child {
     padding-left: 0px;
-}
+    position: relative; 
+} */
 .arrow-right {
     width: 18px;
     height: 18px;
     margin-left: 9px;
+    /* position: absolute; */
 }
 
 /* block 3 */
