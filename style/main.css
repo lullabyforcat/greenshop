@@ -18,7 +18,6 @@ header nav {
     display: flex;
     justify-content: space-between;
     a{
-        font-family: "CeraPro-Regular", sans-serif;
         font-size: 16px;
         line-height: 20px;
         text-align: left;
@@ -134,15 +133,18 @@ header nav .button {
 
 .hero {
     background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
-
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .uppercase {
     text-transform: uppercase;
 }
 
-.hero-block {
+.hero-left {
     display: inline-block;
     vertical-align: top;
+    margin-left: 40px;
 }
 
 .hero h1 {
@@ -150,7 +152,6 @@ header nav .button {
     width: 530px;
     margin-top: 7px;
     font-size: 70px;
-    /* font-weight: 900; */
     line-height: 70px;
     text-align: left;
     color:#3D3D3D;
@@ -164,7 +165,6 @@ header nav .button {
     font-family: "CeraPro-Medium", sans-serif;
     margin-top: 68px;
     font-size: 14px;
-    /* font-weight: 500; */
     line-height: 16px;
     letter-spacing: 0.1em;
     text-align: left;
@@ -172,11 +172,9 @@ header nav .button {
 }
 
 .hero p {
-    font-family: "CeraPro-Regular", sans-serif;
     width: 557px;
     margin-top: 5px;
     font-size: 14px;
-    /* font-weight: 400; */
     line-height: 24px;
     text-align: left;
     color: #727272;
@@ -188,7 +186,6 @@ header nav .button {
     margin-top: 44px;
     width: 140px;
     font-size: 16px;
-    /* font-weight: 700; */
     line-height: 20px;
     background: #46A358;
     border-radius: 6px;
@@ -197,19 +194,8 @@ header nav .button {
     text-align: center;
 }
 
-.hero .left {
-    margin-left: 40px;
-}
-
-.hero .right {
+.hero-right {
     margin-top: 12px;
-    float: right
-}
-
-/* clear */
-
-.clear {
-    clear: both;
 }
 
 /* content */
@@ -243,7 +229,6 @@ section nav h3 {
     font-family: "CeraPro-Bold", sans-serif;
     color: #3D3D3D;
     font-size: 18px;
-    /* font-weight: 700; */
     line-height: 16px;
     text-align: left;
     margin-bottom: 7px;
@@ -254,10 +239,8 @@ margin-left: 12px;
 }
 
 .ul-nav a {
-    font-family: "CeraPro-Regular", sans-serif;
     color: #3D3D3D;
     font-size: 15px;
-    /* font-weight: 400; */
     line-height: 40px;
     text-align: left;
 }
@@ -283,7 +266,6 @@ margin-left: 12px;
 .products ul li {
     display: inline-block;
     margin-right: 37px;
-    box-sizing: content-box;
 }
 
 .products ul li:last-child {
@@ -303,8 +285,14 @@ margin-left: 12px;
     color: #3D3D3D;
 }
 
-.content-right {
-    float: right
+.content-flex, .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+
+.content-flex {
+    flex-wrap: wrap;
 }
 
 .product-block {
@@ -328,9 +316,7 @@ margin-left: 12px;
 }
 
 .title{
-    font-family: "CeraPro-Regular", sans-serif;
     font-size: 16px;
-    /* font-weight: 400; */
     line-height: 16px;
     text-align: left;
     color: #3D3D3D;
@@ -340,7 +326,6 @@ margin-left: 12px;
 .price {
     font-family: "CeraPro-Bold", sans-serif;
     font-size: 18px;
-    /* font-weight: 700; */
     line-height: 16px;
     text-align: left;
     color: #46A358;
@@ -376,7 +361,7 @@ margin-left: 12px;
 .product-img:hover {
     border-top: 1px solid #46A358;
     .icons-block {
-        opacity: 100;
+        opacity: 1;
     }
 }
 
@@ -384,15 +369,18 @@ margin-left: 12px;
     padding: 6px;
     background-color:#FFFFFF;
     }
+
+ .content-flex-2 {
+    display: flex;
+    justify-content: end;
+ }   
 .pages {
-    float:right;
     margin-bottom: 82px;
 }
 
 .discount {
-    font-family: CeraPro-Medium;
+    font-family: "CeraPro-Medium", sans-serif;
     font-size: 16px;
-/* font-weight: 500; */
     line-height: 16px;
     text-align: left;
     color: #FFFFFF;
@@ -405,14 +393,13 @@ margin-left: 12px;
 .discount-price {
     color: #A5A5A5;
     text-decoration: line-through;
-    font-family: "CeraPro-Regular", sans-serif;
 }
+
 .nr{
     font-family: "CeraPro-Thin", sans-serif;
     display: inline-block;
     color: #3D3D3D;
     font-size: 18px;
-    /* font-weight: 300; */
     line-height: 16px;
     text-align: left;
     padding-top: 9px;
@@ -428,7 +415,6 @@ margin-left: 12px;
     font-family: "CeraPro-Bold", sans-serif;
     color: #FFF;
     font-size: 18px;
-    /* font-weight: 700; */
     line-height: 16px;
     text-align: left;
     background: #46A358;
@@ -468,9 +454,8 @@ margin-left: 12px;
 }
 
 .flex-1-h {
-    font-family: CeraPro-Black;
+    font-family: "CeraPro-Black", sans-serif;
     font-size: 18px;
-    /* font-weight: 900; */
     line-height: 24px;
     text-align: right;
     color: #3D3D3D;
@@ -480,9 +465,7 @@ margin-left: 12px;
 }
 
 .flex-p {
-    font-family: CeraPro-Regular;
     font-size: 14px;
-/* font-weight: 400; */
     line-height: 24px;
     text-align: right;
     color: #727272;
@@ -494,9 +477,8 @@ margin-left: 12px;
     width: 140px;
     margin-top: 25px;
     text-align: right;
-    font-family: CeraPro-Medium;
+    font-family: "CeraPro-Medium", sans-serif;
     font-size: 14px;
-    /* font-weight: 500; */
     line-height: 20px;
     text-align: left;
     color: #FFFFFF;
@@ -507,9 +489,8 @@ margin-left: 12px;
 }
 
 .flex-h2 {
-    font-family: CeraPro-Bold;
+    font-family: "CeraPro-Bold", sans-serif;
     font-size: 30px;
-    /* font-weight: 700; */
     line-height: 16px;
     text-align: center;
     color: #3D3D3D;
@@ -517,9 +498,7 @@ margin-left: 12px;
 }
 
 .flex-p-under-h {
-    font-family: CeraPro-Regular;
     font-size: 14px;
-    /* font-weight: 400; */
     line-height: 24px;
     text-align: center;
     color: #727272;
@@ -542,18 +521,16 @@ margin-left: 12px;
 }
 
 .green {
-    font-family: CeraPro-Medium;
+    font-family: "CeraPro-Medium", sans-serif;
     font-size: 14px;
-    /* font-weight: 500; */
     line-height: 16px;
     text-align: left;
     color: #46A358;
 }
 
 .flex-2-h {
-    font-family: CeraPro-Bold;
+    font-family: "CeraPro-Bold", sans-serif;
     font-size: 20px;
-    /* font-weight: 700; */
     line-height: 26px;
     text-align: left;
     color: #3D3D3D; 
@@ -562,9 +539,7 @@ margin-left: 12px;
 }
 
 .flex-2-p {
-    font-family: CeraPro-Regular;
     font-size: 14px;
-    /* font-weight: 400; */
     line-height: 22px;
     text-align: left;
     color: #727272;
@@ -572,9 +547,8 @@ margin-left: 12px;
 }
 
 .more {
-    font-family: CeraPro-Medium;
+    font-family: "CeraPro-Medium", sans-serif;
     font-size: 14px;
-    /* font-weight: 500; */
     line-height: 16px;
     text-align: left;
     color: #3D3D3D;
@@ -583,5 +557,201 @@ margin-left: 12px;
 
 .more:hover {
     color: #46A358;
-
 }
+
+/* footer */
+
+.first-line {
+    display:flex;
+    justify-content: space-between;
+    gap: 62px;
+    background-color: #FBFBFB;
+    padding: 24px 25px;
+}
+
+.with-icons {
+    width: 204px;
+}
+.text-with-icons{
+    display:flex;
+    justify-content: space-between;
+    gap: 61px;
+}
+
+.bold {
+    font-family: "CeraPro-Bold", sans-serif;
+    font-size: 17px;
+    line-height: 16px;
+    text-align: left;
+    color: #3D3D3D;
+    margin-top: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #727272;
+    margin-top: 9px;
+}
+
+.bold-news {
+    font-family: "CeraPro-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: left;
+    color: #3D3D3D;
+    margin-top: 13px;
+}
+
+.footer-form {
+    margin-top: 25px;
+    height: 40px;
+    width: 354px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    input {
+        padding-left:11px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    ::placeholder {
+        font-family: Cera Pro;
+        font-size: 14px;
+        font-family: "CeraPro-Regular", sans-serif;
+        line-height: 16px;
+        text-align: left;
+        margin-left: 11px;
+    }
+    button{
+        padding-left: 26px;
+        background: #46A358;
+        font-family: Cera Pro;
+        font-family: "CeraPro-Bold", sans-serif;
+        font-size: 18px;
+        line-height: 16px;
+        text-align: left;
+        color: #ffffff;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 85px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+.text-news {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: left;
+    color: #727272;
+    margin-top: 18px;
+}
+
+.green-line {
+    display: flex;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+    padding: 25px 23px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.green-line p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #3D3D3D;
+}
+
+.green-block {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    transition: 0.5s;
+}
+
+.green-block:hover {
+    p{
+    color: #FFF;
+}
+/* .green-ico-svg {
+    color: #FFF;
+} */
+}
+
+.green-ico {
+    width: 20px;
+    height: 20px;
+}
+
+.second-line {
+    display: flex;
+    padding: 33px 0px 29px 25px;
+    background: #FBFBFB;
+    justify-content: space-between;
+}
+
+.bold-list {
+    font-family: "CeraPro-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: left;
+    color: #3D3D3D;
+    margin-bottom: 8px;
+}
+
+.second-line a {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    color: #3D3D3D;
+}
+
+.second-line a:hover {
+    color: #46A358;
+    text-decoration: underline;
+}
+
+.footer-icons-sprite, .footer-icons-img {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 33px;
+    gap: 10px;
+    svg {
+        height: 30px;
+        width: 30px; 
+        use {
+            height: 30px;
+            width: 30px;  
+        }
+    }
+}
+
+.foot-ico {
+    height: 30px;
+    width: 30px;
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.second-line >div:last-child {
+    width: 224px;
+    margin-right: 155px;
+}
+
+.last-line p {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #3D3D3D;
+    margin-bottom: 22px;
+    margin-top: 6px;
+}
+
+
