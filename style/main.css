@@ -149,22 +149,14 @@ header nav .button {
     width: 209px;
     align-items: center;
 }
-.search {
+.search svg{
     width: 20px;
     height: 20px;
-    svg{
-    width: 20px;
-    height: 20px;
-}
 }
 
-.cart {
-    width: 20px;
-    height: 20px;
-    svg{
-    width: 20px;
-    height: 20px;
-}
+.cart svg {
+    width: 29px;
+    height: 26px;
 }
 .login-img {
     vertical-align: bottom;
@@ -258,7 +250,7 @@ header nav .button {
 /* content */
 
 .content {
-    margin-top: 26px;
+    margin-top: 46px;
 }
 
 .content-block {
@@ -273,6 +265,7 @@ header nav .button {
     padding-left: 18px;
     padding-right: 24px;
     padding-bottom: 19px;
+    transition: 0.5s;
 }
 
 
@@ -280,6 +273,12 @@ header nav .button {
     padding-top: 14px;
     margin-bottom: 36px;
 }
+
+.categories-flex {
+    display:flex;
+    justify-content: space-between;
+}
+
 section nav h3 {
     font-family: "CeraPro-Bold", sans-serif;
     color: #3D3D3D;
@@ -349,21 +348,26 @@ section nav h3 {
         color: rgba(61, 61, 61, 1);
         
     }
+
+    ul {
+        padding-left: 12px
+    }
     .size-lists {
         display:flex;
         justify-content: space-between;
-        ul:first-child{
-            padding-left: 12px;
-        }
-        ul li a {
-            font-family: "CeraPro-Regular", sans-serif;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 40px;
-            text-align: left;
-            color: rgba(61, 61, 61, 1);
-        }
+        font-family: "CeraPro-Regular", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        color: rgba(61, 61, 61, 1);
+        transition: 0.5s;
     }
+}
+
+.size-lists:hover {
+    font-family: "CeraPro-Bold", sans-serif;
+    color: #46A358;;
 }
 
 .banner {
@@ -383,6 +387,7 @@ margin-left: 12px;
 
 .ul-nav a:hover {
     color: #46A358;
+    font-family: "CeraPro-Bold", sans-serif;
 }
 
 .bottom {
@@ -545,6 +550,7 @@ margin-left: 12px;
     margin-right: 10px;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
+    transition: 0.5s;
 }
 
 .nr:hover {
@@ -554,7 +560,7 @@ margin-left: 12px;
     line-height: 16px;
     text-align: left;
     background: #46A358;
-    border: 0px;
+    border: 1px solid #46A358;
     cursor: pointer;
 }
 /* .nr:last-child {
@@ -643,6 +649,7 @@ margin-left: 12px;
     color: #46A358;
     border: 1px solid #46A358;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .flex-h2 {
@@ -710,11 +717,14 @@ margin-left: 12px;
     text-align: left;
     color: #3D3D3D;
     margin-top: 9px;
+    transition: 0.5s;
 }
 
 .more:hover {
     color: #46A358;
     cursor: pointer;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 /* footer */

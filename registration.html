@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="./style/form.css">
+    <link rel="stylesheet" href="./style/font.css">
 </head>
 
 <body>
@@ -13,15 +14,16 @@
         <p style="text-align: right;">X</p>
         <div class="text">
             <p style="text-align: center; padding: 20px 0px; font-size: 20px;">Login | <a href="#">Register</a></p>
-            <p>Enter your email and password to register.</p>
+            <p class="enter">Enter your email and password to register.</p>
             <form>
                 <input type="text" placeholder="Username" name="username" required>
                 <input type="email" placeholder="Enter your email address" name="email" required>
-                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Password" name="password" id="pass" required>
+                <img src="./img/hide.png" alt="" id="showhide">
                 <input type="password" placeholder="Confirm Password" name="confirm-password" required>
                 <button type="submit" class="form">Register</button>
             </form>
-            <p>
+            <p class="register">
                 <img class="line" src="./img/line.png" alt="line">
                 Or register with
                 <img class="line" src="./img/line.png" alt="line">
@@ -33,6 +35,19 @@
         </div>
         <hr>
     </div>
+    <script>
+
+        document.getElementById('showhide').addEventListener('click', () => {
+            const input = document.getElementById('pass');
+
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password"
+            }
+        })
+
+    </script>
 </body>
 
 </html>
