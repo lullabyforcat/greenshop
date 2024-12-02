@@ -25,10 +25,10 @@
                         <a href="">Home</a>
                     </li>
                     <li class="nav-top-li">
-                        <a href="">Shop</a>
+                        <a href="#shop">Shop</a>
                     </li>
                     <li class="nav-top-li">
-                        <a href="">Plant Care</a>
+                        <a href="#plantcare">Plant Care</a>
                         <ul class="nav-top-l1">
                             <li>
                                 <a href="">Drainage</a>
@@ -65,15 +65,30 @@
                         </ul>
                     </li>
                     <li class="nav-top-li">
-                        <a href="">Blogs</a>
+                        <a href="#blog">Blogs</a>
                     </li>
                 </ul>
-                <div class="nav right button">
-                    <a href="">
-                        <img src="./img/logout.png" alt="logout" class="login-img">
-                        <span class="login-text">Login</span>
-                    </a>
+                <div class="nav-icos">
+                    <div clas="search">
+                        <img src="./img/svg/search.svg" alt="">
+                        <!-- <svg>
+                            <use href="./sprite.svg#search" />
+                        </svg> -->
+                    </div>
+                    <div clas="cart">
+                        <img src="./img/svg/cart.svg" alt="">
+                        <!-- <svg>
+                            <use href="./sprite.svg#cart" />
+                        </svg> -->
+                    </div>
+                    <div class="nav right button">
+                        <a href="">
+                            <img src="./img/logout.png" alt="logout" class="login-img">
+                            <span class="login-text">Login</span>
+                        </a>
+                    </div>
                 </div>
+
             </nav>
         </header>
         <main>
@@ -92,22 +107,49 @@
                     <img src="./img/plants.png" alt="Two plants">
                 </div>
             </section>
-            <section class="content">
+            <section class="content" id="shop">
                 <div class="content-flex">
                     <nav class="content-block">
-                        <div class="categories">
-                            <h3>Categories</h3>
-                            <ul class="ul-nav">
-                                <li><a href="">House Plants</a></li>
-                                <li><a href="">Potter Plants</a></li>
-                                <li><a href="">Seeds</a></li>
-                                <li><a href="">Small Plants</a></li>
-                                <li><a href="">Big Plants</a></li>
-                                <li><a href="">Succulents</a></li>
-                                <li><a href="">Trerrariums</a></li>
-                                <li><a href="">Gardening</a></li>
-                                <li><a href="">Accessories</a></li>
-                            </ul>
+                        <div class="nav-div">
+                            <div class="categories">
+                                <h3>Categories</h3>
+                                <ul class="ul-nav">
+                                    <li><a href="">House Plants</a></li>
+                                    <li><a href="">Potter Plants</a></li>
+                                    <li><a href="">Seeds</a></li>
+                                    <li><a href="">Small Plants</a></li>
+                                    <li><a href="">Big Plants</a></li>
+                                    <li><a href="">Succulents</a></li>
+                                    <li><a href="">Trerrariums</a></li>
+                                    <li><a href="">Gardening</a></li>
+                                    <li><a href="">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="price">
+                                <h3>Price Range</h3>
+                                <form>
+                                    <div>
+                                        <input id="price-range" type="range">
+                                        <label for="price-range">Price: <span class="green">$39 - $1230</span></label>
+                                    </div>
+                                    <button type="submit">Filter</button>
+                                </form>
+                            </div>
+                            <div class="size">
+                                <h3>Size</h3>
+                                <div class="size-lists">
+                                    <ul>
+                                        <li><a href="">Small</a></li>
+                                        <li><a href="">Medium</a></li>
+                                        <li><a href="">Large</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">(119)</a></li>
+                                        <li><a href="">(86)</a></li>
+                                        <li><a href="">(78)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <img src="./img/super-sale-banner.png" alt="" class="banner">
                     </nav>
@@ -311,11 +353,11 @@
                     </div>
                 </div>
             </section>
-            <section class="flex">
+            <section class="flex" id="plantcare">
                 <div class="flex-1">
                     <div class="flex-1-item">
-                        <div><img src="./img/flex-1-left.png" alt="Summer cactus
-                        & succulents">
+                        <div class="flex-img">
+                            <img src="./img/flex-1-left.png" alt="Summer cactus & succulents">
                         </div>
                         <div class="flex-text">
                             <h3 class="flex-1-h">Summer cactus
@@ -329,7 +371,7 @@
                         </div>
                     </div>
                     <div class="flex-1-item">
-                        <div>
+                        <div class="flex-img">
                             <img src="./img/flex-1-right.png" alt="Styling Trends">
                         </div>
                         <div class="flex-text">
@@ -344,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="flex-h2">Our Blog Posts</h2>
+                <h2 class="flex-h2" id="blog">Our Blog Posts</h2>
                 <p class="flex-p-under-h">We are an online plant shop offering a wide range of cheap and trendy
                     plants. </p>
                 <div class="flex-2">
@@ -424,21 +466,21 @@
             <div class="first-line">
                 <div class="text-with-icons">
                     <div class="with-icons">
-                        <img src="./img/footer-01.svg" alt="Garden Care" class="footer-icon-img">
+                        <!-- <img src="./img/footer-01.svg" alt="Garden Care" class="footer-icon-img"> -->
                         <p class="bold">Garden Care</p>
                         <p class="footer-text">We are an online plant shop offering a wide range of cheap and trendy
                             plants.
                         </p>
                     </div>
                     <div class="with-icons">
-                        <img src="./img/footer-02.svg" alt="Plant Renovation" class="footer-icon-img">
+                        <!-- <img src="./img/footer-02.svg" alt="Plant Renovation" class="footer-icon-img"> -->
                         <p class="bold">Plant Renovation</p>
                         <p class="footer-text">We are an online plant shop offering a wide range of cheap and trendy
                             plants.
                         </p>
                     </div>
                     <div class="with-icons">
-                        <img src="./img/footer-03.svg" alt="Watering Graden" class="footer-icon-img">
+                        <!-- <img src="./img/footer-03.svg" alt="Watering Graden" class="footer-icon-img"> -->
                         <p class="bold">Watering Graden</p>
                         <p class="footer-text">We are an online plant shop offering a wide range of cheap and trendy
                             plants.
@@ -521,10 +563,8 @@
                 </div>
                 <div>
                     <p class="bold-list">Social Media</p>
-                    <!-- <div class="footer-icons-sprite">
-                        
-                        ці іконки через спрайт не захотіли відображатись, тому я їх підключила через тег img
-                        
+                    <div class="footer-icons-sprite">
+
                         <div class="foot-ico">
                             <svg>
                                 <use href="./sprite.svg#facebook" />
@@ -550,8 +590,8 @@
                                 <use href="./sprite.svg#youtube" />
                             </svg>
                         </div>
-                    </div> -->
-                    <div class="footer-icons-img">
+                    </div>
+                    <!-- <div class="footer-icons-img">
                         <div class="foot-ico">
                             <img src="./img/svg/frame-facebook.svg" alt="">
                         </div>
@@ -567,7 +607,9 @@
                         <div class="foot-ico">
                             <img src="./img/svg/frame-youtube.svg" alt="">
                         </div>
-                    </div>
+                    </div> -->
+
+
                     <p class="bold-list">We accept</p>
                     <img src="./img/pay-systems.png" alt="">
                 </div>
@@ -577,6 +619,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://kit.fontawesome.com/11e30ec384.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
