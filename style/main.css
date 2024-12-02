@@ -301,7 +301,7 @@ section nav h3 {
         accent-color: rgba(70, 163, 88, 1);
         background: rgba(70, 163, 88, 0.2);
         height: 4px;
-        weight: 209px;
+        width: 209px;
     }
     div{
         display: flex;
